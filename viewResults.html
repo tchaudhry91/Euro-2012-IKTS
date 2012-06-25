@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<head>	
+	</head>
+	<body>
+        <div align="center"><img src="http://i45.tinypic.com/16kueqo.png" /></div>
+     	<h1 align="center">RESULTS SO FAR</h1>
+                           <div align="center">
+                            <table border=1>
+                                <tr>
+                                    <th>Match</th><th>Home Score</th><th>Away Score</th><th>Home Scorers</th>
+                                    <th>Away Scorers</th>
+                                </tr>
+                              {% for prediction in predictions %}
+                                <tr>
+                                    <td>{{prediction.match}}</td>
+                                    <td>{{prediction.home_score}}</td>
+                                    <td>{{prediction.away_score}}</td>
+                                    <td>{{prediction.home_scorers}}</td>
+                                    <td>{{prediction.away_scorers}}</td>
+                                </tr>
+                              {% endfor %}
+                            </table>
+                           </div>
+                        <div align='center'>
+                        1.Poland vs Greece<br>
+                        2.Russia vs Czech Republic<br>
+                        3.Netherlands vs Denmark<br>
+                        4.Germany vs Portugal<br>
+                        5.Spain vs Italy<br>
+                        6.Ireland vs Croatia<br>
+                        7.France vs England<br>
+                        8.Ukraine vs Sweden<br>
+                        9.Greece vs Czech Republic<br>
+                        10.Poland vs Russia<br>
+                        11.Denmark vs Portugal<br>
+                        12.Netherlands vs Germany<br>
+                        13.Italy vs Croatia<br>
+                        14.Spain vs Ireland<br>
+                        15.Ukraine vs France<br>
+                        16.Sweden vs England<br>
+                        17.Greece vs Russia<br>
+                        18.Poland vs Czech Republic<br>
+                        19.Denmark vs Germany<br>
+                        20.Portugal vs Netherlands<br>
+                        21.Italy vs Ireland<br>
+                        22.Croatia vs Spain<br>
+                        23.Sweden vs France<br>
+                        24.Ukraine vs England<br>
+                        25. Czech Republic vs Portugal<br>
+                       	26. Germany vs Greece<br>
+                       	27. Spain vs France<br>
+                       	28. England vs Italy<br>
+                       	29. SF1<br>
+                       	30. SF2<br>
+                       	31. Final<br>
+                        <a href='/'>Home</a>
+                        </div>
+	</body>
+</html>

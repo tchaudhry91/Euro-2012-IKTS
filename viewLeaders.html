@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<head>	
+	</head>
+	<body>
+        <div align="center">
+        	<img src="http://i45.tinypic.com/16kueqo.png" /><br>
+        	<h1>LEADERS</h1>
+        	<table>
+        		<tr>
+        			<th>USER</th>
+        			<th>SCORE</th>
+        		</tr>
+        		{% for score in scores %}
+        		<tr>
+        			<td>
+        				{{score[0]}}
+        			</td>
+        			<td>
+        				{{score[1]}}
+        			</td>
+        		</tr>
+        		{% endfor %}
+        	</table>
+        </div>
+	</body>
+</html>
